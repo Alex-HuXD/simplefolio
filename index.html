@@ -17,18 +17,22 @@
     <!-- TypedJS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
 
   <body>
+
+    <!-- <div class="loader">
+      <span>{</span><span>}</span>
+    </div> -->
+
+
     <!-- scroll-up-btn -->
     <div class="scroller">
       <i class="fas fa-chevron-up"></i>
     </div>
+
+    
     <!-- Navbar -->
     <nav class="navbar">
       <div class="max-width">
@@ -146,7 +150,7 @@
           <h2 class="title">Skills</h2>
           <div class="skills-content">
             <div class="column left">
-              <div class="text">my skills</div>
+              <div class="text">My skills</div>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, atque? Architecto eum, amet atque inventore similique eius, possimus asperiores tenetur dolorum consequuntur voluptates non. Culpa unde tempora delectus repellendus beatae asperiores in facere laborum qui libero hic similique dolore quod, quos laboriosam, quas fuga architecto? Saepe incidunt molestias itaque voluptate!</p>
               
             </div>
@@ -214,27 +218,38 @@
 
             <div class="column right">
               <div class="text">Message me</div>
-              <form action="#">
+              <form action="POST" data-netlify="true">
                 <div class="fields">
                   <div class="field name">
-                    <input type="text" placeholder="Name" required>
+                    <input type="text" name='name' placeholder="Your Name" required>
                   </div>
                   <div class="field email">
-                    <input type="text" placeholder="Email" required>
+                    <input type="text" name='email' placeholder="Your Email" required>
                   </div>
                 </div>
                 <div class="field">
                   
-                  <input type="text" placeholder="Subject" required>
+                  <input type="text" name="subject" placeholder="Subject" required>
                 </div>  
                 <div class="field message">
                     <textarea 
+                    name='message'
                     cols="30" 
                     rows="10" 
                     placeholder="Your message here"
                     required
-                    style="resize: none;">
-                    </textarea>
+                    style="resize: none;"></textarea>
+                </div>
+                <div class="field upload-file">
+                    <input
+                    type="file"
+                    name='myfile'
+                    id='myfile'
+                    placeholder="Upload File"
+                    />
+                </div>
+                <div class="field">
+                  <div data-netlify-recaptcha="true"></div>
                 </div>
                 <div class="button">
                   <button type="submit">Send Message</button>

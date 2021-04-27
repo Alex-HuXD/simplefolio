@@ -545,6 +545,7 @@ section .title::after {
   width: 100%;
   border: 1px solid silver;
   border-radius: 0.5rem;
+  color: #212121;
   outline: none;
   padding: 0 1rem;
   font-size: 1.1rem;
