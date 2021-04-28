@@ -8,6 +8,7 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="/version-1/style/remedy.css" />
     <link rel="stylesheet" href="/version-1/style/style.css" />
+    <Link rel="stylesheet" href="/version-1//style/loader.css"></Link>
     <!-- FONT AWESOME -->
     <link
       rel="stylesheet"
@@ -22,9 +23,9 @@
 
   <body>
 
-    <!-- <div class="loader">
-      <span>{</span><span>}</span>
-    </div> -->
+    <div class="loader">
+      <span>{</span>Loading...<span>}</span>
+    </div>
 
 
     <!-- scroll-up-btn -->
@@ -96,7 +97,7 @@
             <div class="column right">
               <div class="text"><i class="far fa-hand-paper"></i>Hi,my name is Alex </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ipsam iste quod aliquam facilis quo quibusdam dolore mollitia inventore recusandae minus esse officia numquam debitis iusto, doloremque quasi laborum accusamus, eveniet voluptas, ratione ab tempora?</p>
-              <a href="#">My Resume</a>
+              <a href="https://www.notion.so/alexdevhu/Alex-D-Hu-347f5aad9f4a471387db4b54f6495091" target="_blank">My Resume</a>
             </div>  
         </div>
       </section>
@@ -118,6 +119,10 @@
                 <i class="fas fa-chart-line"></i>
                 <div class="text">project2</div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, excepturi.</p>
+                <div class="view-btn" style="display: flex; justify-content: center; gap: 1.6rem;">
+                  <a href="" style="text-decoration: none; color: whitesmoke; background: rgb(94, 91, 91); border-radius: 10px; padding: 10px;">live view</a>
+                  <a href="" style="text-decoration: none; color: whitesmoke; background: rgb(94, 91, 91); border-radius: 10px; padding: 10px;">source code</a>
+                </div>
               </div>
             </div>
             <div class="card">
@@ -280,7 +285,11 @@
         rights reserved
       </div>
     </footer>
-
+    <script>
+      $(window).on('load',function(){
+        $('.loader').fadeOut('slow')
+      })
+    </script>
     <script src="./script.js"></script>
   </body>
 </html>
