@@ -400,13 +400,15 @@ section .title::after {
 }
 
 .skills .skills-content .column {
-  width: calc(50% - 2rem);
+  width: calc(45% - 2rem);
 }
 
 .skills .skills-content .left .text {
-  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 0.7rem;
+  margin-right: 1rem;
 }
 
 .skills .skills-content .left p {
