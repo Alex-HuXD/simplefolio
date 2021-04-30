@@ -289,6 +289,11 @@ section .title::after {
   font-weight: 600;
   margin-bottom: 0.8rem;
 }
+.about .about-content .right .text-content {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 
 .about .about-content .right i {
   font-size: 2rem;
