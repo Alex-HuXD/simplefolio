@@ -350,10 +350,11 @@ section .title::after {
   width: calc(33% - 2rem);
   background: grey;
   text-align: center;
-  border-radius: 0.6rem;
+  border-radius: 0.8rem;
   padding: 1.2rem 1.6rem;
   cursor: pointer;
   transition: all 0.3s ease;
+  box-shadow: 0px 10px 15px rgba(125, 133, 132, 0.082);
 }
 .projects .projects-content .card:hover {
   background: turquoise;
@@ -474,20 +475,12 @@ section .title::after {
   left: 0;
   top: 0;
   background: turquoise;
+  width: 100%;
 }
 
-.skills .skills-content .right .html::before {
+/* .skills .skills-content .right .html::before {
   width: 80%;
-}
-.skills .skills-content .right .css::before {
-  width: 60%;
-}
-.skills .skills-content .right .js::before {
-  width: 90%;
-}
-.skills .skills-content .right .python::before {
-  width: 60%;
-}
+} */
 
 /* contact me section styling */
 
